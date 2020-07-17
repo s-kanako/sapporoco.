@@ -1,0 +1,74 @@
+.contact {
+    padding: 100px 50px;
+    position: relative;
+    margin-top: 60px;
+    @include lg {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    &_inner {
+        width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 50px 0;
+        @include lg {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        @include xs {
+            padding: 50px 10px;
+        }
+        .contact-txt {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+    &_form {
+        width: 500px;
+        max-width: 100%;
+        margin: 0 auto;
+        p {
+            font-weight: bold;
+            margin-right: 10px;
+            @include sm {
+                margin-right: 0;
+            }
+        }
+        input,textarea {
+            width: 500px;
+            max-width: 100%;
+        }
+        input {
+            height: 38px;
+            margin-bottom: 30px;
+        }
+        
+    }
+    &_item {
+        display: flex;
+        align-items: center;
+    }
+    &_must,&_option {
+        font-size: 1.2rem;
+        text-align: center;
+        letter-spacing: normal;
+        padding: 0 3px;
+    }
+    &_must {
+        color: #F71019;
+        border: 1px solid #F71019;
+    }
+    &_option {
+        color: pink;
+        border: 1px solid pink;
+    }
+}
+.select-item {
+    height: 38px;
+    margin-top: 10px;
+    background: #F9FAFB;
+    border: none;
+    width: 100%;
+}
+

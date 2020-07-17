@@ -1,0 +1,54 @@
+
+.btn {
+    &_content {
+        display: inline-block;
+        padding: 20px 60px;
+        border: 3px solid $point-color;
+        color: $point-color;
+        width: 400px;
+        max-width: 100%;
+        letter-spacing: 5px;
+        font-weight: bold;
+        @include sm {
+            padding: 20px;
+        }
+    }
+    &_about {
+        text-align: center;
+    }
+    &:hover {
+        background-color: $point-color;
+        color: #fff;
+    }
+    &_single {
+        width: 300px;
+        padding: 20px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        img {
+            margin-right: 20px;
+        }
+    }
+}
+
+
+.formBtn {
+    border-radius: 50px;
+    background: $point-color;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 12px;
+    padding: 8px 40px;
+    margin: 46px auto;
+    display: inherit;
+    text-align: center;
+    width: 300px!important;
+    height: 40px!important;
+}
+
+
+.service_btn {
+    margin-top: 40px;
+}

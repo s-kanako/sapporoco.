@@ -1,0 +1,46 @@
+.posts {
+    padding-top: 100px;
+    &_inner {
+        padding-top: 50px;
+    }
+    &_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 50%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+.Pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+.Pagination-Item {
+    margin-left: 45px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: $txt-color;
+    border-radius: 50%;
+    font-size: 1.66vw;
+}
+@media screen and (max-width: 768px) {
+    .Pagination-Item {
+        margin-left: 16px;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+.Pagination-Item.isActive {
+    border: none;
+    background: $txt-color;
+    color: #fff;
+}
